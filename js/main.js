@@ -217,7 +217,7 @@
 
 	/**Modify js code------------------------------------------------------------------------------------- */
 
-	const scriptURL = 'https://script.google.com/macros/s/AKfycbzxNm-jVIAs6n67QQ_UDOGx2ly0ovpMJ2bjMBQ65rvalp-cr3oIPn6XgveDyDjJRGSkpw/exec';
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbzP2ggi0lAS07IAPmAjFmEaN8SSU2iRee3KW1B-weIAUO1d0GYMTNULTUZOe8N9p-5U8A/exec';
 	const form = document.forms['google-sheet'];
 
 	const successAlert = document.getElementById('success-alert');

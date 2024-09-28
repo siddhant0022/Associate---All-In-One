@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
@@ -1620,4 +1619,35 @@ company spec
 .carousel-control:focus {
 	outline: none;
 	/* Remove focus outline */
+}
+
+/* Enquiry section----------------------*/
+
+.enquiry{
+	background-color:#0c2340;
+}
+
+.enquiry .div-name h3 {
+	visibility: visible;
+	animation-name: fadeInLeft;
+	color: #ffede6;
+	font-size: 26px;
+}
+
+.enquiry .div-enq {
+	border-radius: 50px;
+	background-color: #eb5d1e;
+	padding: 7px 20px;
+	text-align: center;
+}
+
+.enquiry a {
+	visibility: visible;
+	animation-name: fadeInUp;
+	color: white;
+	font-size: 16px;
+}
+
+.enquiry .div-enq:hover {
+	background-Color: #EE7540;
 }
