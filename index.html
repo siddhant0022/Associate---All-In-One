@@ -28,6 +28,7 @@
 	<link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 	<link href="vendor/aos/aos.css" rel="stylesheet">
 	<link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
 	<!-- Main CSS File -->
 	<link href="css/main.css" rel="stylesheet">
@@ -180,7 +181,35 @@
 				<ul>
 					<li><a href="index.html" class="active">Home</a></li>
 					<li><a href="about-page.html">About us</a></li>
-					<li><a href="service-details.html">Services</a></li>
+					<li class="dropdown"><a href="#"><span>Services</span> <i
+								class="bi bi-chevron-down toggle-dropdown"></i></a>
+						<ul>
+							<li class="dropdown"><a href="service-details.html"><span>Equity</span> <i
+										class="bi bi-chevron-down toggle-dropdown"></i></a>
+								<ul>
+									<li><a href="equity-basic.html">Equity Basic</a></li>
+									<li><a href="equity-premium.html">Equity Premium</a></li>
+									<li><a href="equity-hni.html">Equity HNI</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="service-details.html"><span>Stock Option</span> <i
+										class="bi bi-chevron-down toggle-dropdown"></i></a>
+								<ul>
+									<li><a href="stock-basic.html">Stock Option Basic</a></li>
+									<li><a href="stock-premium.html">Stock Option Premium</a></li>
+									<li><a href="stock-hni.html">Stock Option HNI</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="service-details.html"><span>Index Option</span> <i
+										class="bi bi-chevron-down toggle-dropdown"></i></a>
+								<ul>
+									<li><a href="index-basic.html">Index Option Basic</a></li>
+									<li><a href="index-premium.html">Index Option Premium</a></li>
+									<li><a href="index-hni.html">Index Option HNI</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
 					<li><a href="pricing.html">Pricing</a></li>
 					<li><a href="payment.html">Payment</a></li>
 					<li><a href="index.html#contact">Contact us</a></li>
@@ -227,7 +256,8 @@
 				<div class="row gy-3">
 					<div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100" style="padding-top: 20px;">
 						&nbsp;
-						<img src="img/banner-about.png" alt="" class="img-fluid">
+						<img src="img/banner-about.png" alt="" class="img-fluid"
+							style="animation: up-down 2s ease-in-out infinite alternate-reverse both;">
 					</div>
 
 					<div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up"
@@ -529,7 +559,8 @@
 							</div><!-- End Info Item -->
 
 							<div>
-								<img src="img/contact.png" class="img-fluid">
+								<img src="img/contact.png" class="img-fluid"
+									style="animation: up-down 2s ease-in-out infinite alternate-reverse both;">
 							</div>
 						</div>
 					</div>
@@ -712,8 +743,10 @@
 	<!-- Vendor JS Files -->
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="vendor/aos/aos.js"></script>
+	<script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 	<script src="vendor/glightbox/js/glightbox.min.js"></script>
 	<script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="vendor/swiper/swiper-bundle.min.js"></script>
 
 	<!--vendor JS CDN link-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

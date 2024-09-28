@@ -32,7 +32,7 @@
 </head>
 
 <body class="starter-page-page">
-<header id="header" class="header" style="padding:0;">
+	<header id="header" class="header" style="padding:0;">
 		<div class="tradingview-widget-container">
 			<div class="tradingview-widget-container__widget"></div>
 			<script type="text/javascript"
@@ -177,7 +177,35 @@
 				<ul>
 					<li><a href="index.html#hero" class="active">Home</a></li>
 					<li><a href="about-page.html">About us</a></li>
-					<li><a href="service-details.html">Services</a></li>
+					<li class="dropdown"><a href="#"><span>Services</span> <i
+								class="bi bi-chevron-down toggle-dropdown"></i></a>
+						<ul>
+							<li class="dropdown"><a href="service-details.html"><span>Equity</span> <i
+										class="bi bi-chevron-down toggle-dropdown"></i></a>
+								<ul>
+									<li><a href="equity-basic.html">Equity Basic</a></li>
+									<li><a href="equity-premium.html">Equity Premium</a></li>
+									<li><a href="equity-hni.html">Equity HNI</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="service-details.html"><span>Stock Option</span> <i
+										class="bi bi-chevron-down toggle-dropdown"></i></a>
+								<ul>
+									<li><a href="stock-basic.html">Stock Option Basic</a></li>
+									<li><a href="stock-premium.html">Stock Option Premium</a></li>
+									<li><a href="stock-hni.html">Stock Option HNI</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="service-details.html"><span>Index Option</span> <i
+										class="bi bi-chevron-down toggle-dropdown"></i></a>
+								<ul>
+									<li><a href="index-basic.html">Index Option Basic</a></li>
+									<li><a href="index-premium.html">Index Option Premium</a></li>
+									<li><a href="index-hni.html">Index Option HNI</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
 					<li><a href="pricing.html">Pricing</a></li>
 					<li><a href="payment.html">Payment</a></li>
 					<li><a href="index.html#contact">Contact us</a></li>
@@ -218,7 +246,8 @@
 			<div class="container">
 				<div class="row gy-3">
 					<div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
-						<img src="img/banner-about2.png" alt="" class="img-fluid">
+						<img src="img/banner-about2.png" alt="" class="img-fluid"
+							style="animation: up-down 2s ease-in-out infinite alternate-reverse both;">
 					</div>
 					<div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up"
 						data-aos-delay="200">
@@ -435,7 +464,6 @@
 
 	<!-- Vendor JS Files -->
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="vendor/php-email-form/validate.js"></script>
 	<script src="vendor/aos/aos.js"></script>
 	<script src="vendor/glightbox/js/glightbox.min.js"></script>
 	<script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>

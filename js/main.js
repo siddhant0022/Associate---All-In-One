@@ -6,13 +6,6 @@
 (function() {
 	"use strict";
 
-	window.onload = function() {
-		var url = window.location.href;
-		if (url.endsWith('.html')) {
-			history.pushState(null, null, url.slice(0, -5));
-		}
-	};
-
 	/**
 	 * Apply .scrolled class to the body as the page is scrolled down
 	 */

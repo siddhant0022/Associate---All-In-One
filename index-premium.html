@@ -33,7 +33,7 @@
 </head>
 
 <body>
-<header id="header" class="header" style="padding:0;">
+	<header id="header" class="header" style="padding:0;">
 		<div class="tradingview-widget-container">
 			<div class="tradingview-widget-container__widget"></div>
 			<script type="text/javascript"
@@ -178,7 +178,35 @@
 				<ul>
 					<li><a href="index.html" class="active">Home</a></li>
 					<li><a href="about-page.html">About us</a></li>
-					<li><a href="service-details.html">Services</a></li>
+					<li class="dropdown"><a href="#"><span>Services</span> <i
+								class="bi bi-chevron-down toggle-dropdown"></i></a>
+						<ul>
+							<li class="dropdown"><a href="service-details.html"><span>Equity</span> <i
+										class="bi bi-chevron-down toggle-dropdown"></i></a>
+								<ul>
+									<li><a href="equity-basic.html">Equity Basic</a></li>
+									<li><a href="equity-premium.html">Equity Premium</a></li>
+									<li><a href="equity-hni.html">Equity HNI</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="service-details.html"><span>Stock Option</span> <i
+										class="bi bi-chevron-down toggle-dropdown"></i></a>
+								<ul>
+									<li><a href="stock-basic.html">Stock Option Basic</a></li>
+									<li><a href="stock-premium.html">Stock Option Premium</a></li>
+									<li><a href="stock-hni.html">Stock Option HNI</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="service-details.html"><span>Index Option</span> <i
+										class="bi bi-chevron-down toggle-dropdown"></i></a>
+								<ul>
+									<li><a href="index-basic.html">Index Option Basic</a></li>
+									<li><a href="index-premium.html">Index Option Premium</a></li>
+									<li><a href="index-hni.html">Index Option HNI</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
 					<li><a href="pricing.html">Pricing</a></li>
 					<li><a href="payment.html">Payment</a></li>
 					<li><a href="index.html#contact">Contact us</a></li>
@@ -221,8 +249,8 @@
 				<div class="row">
 					<div class="col-lg-8 d-flex" data-aos="fade-up" data-aos-delay="100">
 						<div class="container service-description" data-aos="fade-up">
-							<h2>Description For Our Services 'Index Premium (Nifty , Banknifty , Finnifty , Sensex ,
-								Bankex &AMP; Midcap)'</h2>
+							<h2>Description For Our Services 'Index Premium'</h2>
+							<h5>(Nifty, Banknifty, Finnifty, Sensex, Bankex &AMP; Midcap)</h5>
 							<p>A product designed for traders who aim to grab high potential trades in the Options
 								Segment.</p>
 							<ul>
@@ -238,7 +266,7 @@
 								<li><i class="bi-patch-check">&nbsp;</i><b>Minimum
 										Investment:-</b><span> &#8377</span> 50,000</li>
 								<li><i class="bi-patch-check">&nbsp;</i><b>Return
-										expectation:-</b> 20% - 25% on Every Trade</li>
+										expectation:-</b> 20% - 30% on Every Trade</li>
 								<li><i class="bi-patch-check">&nbsp;</i><b>Mode of
 										recommendation:-</b> WhatsApp , Call, Message</li>
 								<li><i class="bi-patch-check">&nbsp;</i><b>Follow Up:-</b> Yes,
@@ -427,13 +455,12 @@
 
 	<!-- Vendor JS Files -->
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="vendor/php-email-form/validate.js"></script>
 	<script src="vendor/aos/aos.js"></script>
 	<script src="vendor/glightbox/js/glightbox.min.js"></script>
 	<script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 	<script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
 	<script src="vendor/swiper/swiper-bundle.min.js"></script>
-	
+
 	<!-- Main JS File -->
 	<script src="js/main.js"></script>
 
