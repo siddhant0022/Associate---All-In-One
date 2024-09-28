@@ -6,6 +6,13 @@
 (function() {
 	"use strict";
 
+	window.onload = function() {
+		var url = window.location.href;
+		if (url.endsWith('.html')) {
+			history.pushState(null, null, url.slice(0, -5));
+		}
+	};
+
 	/**
 	 * Apply .scrolled class to the body as the page is scrolled down
 	 */
@@ -208,7 +215,7 @@
 	document.addEventListener('scroll', navmenuScrollspy);
 
 
-/**Modify js code------------------------------------------------------------------------------------- */
+	/**Modify js code------------------------------------------------------------------------------------- */
 
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbzxNm-jVIAs6n67QQ_UDOGx2ly0ovpMJ2bjMBQ65rvalp-cr3oIPn6XgveDyDjJRGSkpw/exec';
 	const form = document.forms['google-sheet'];
